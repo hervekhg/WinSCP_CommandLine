@@ -1,0 +1,18 @@
+
+# Automatically abort script on errors
+option batch abort
+
+# Disable overwrite confirmations that conflict with the previous
+option confirm off
+
+# Connect to FTP server using a user/password
+open %1%://%2%:laposte09@%3%/
+
+# Download file
+get -preservetime %4%%6% %5%\%6%
+
+# Disconnect
+close
+
+# Back to cmd
+exit

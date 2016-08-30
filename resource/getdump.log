@@ -1,0 +1,616 @@
+. 2014-09-29 11:14:36.399 --------------------------------------------------------------------------
+. 2014-09-29 11:14:36.400 WinSCP Version 5.5.5 (Build 4605) (OS 6.1.7601 Service Pack 1 - Windows 7 Enterprise)
+. 2014-09-29 11:14:36.400 Configuration: C:\Users\A577522\AppData\Roaming\WinSCP.ini
+. 2014-09-29 11:14:36.401 Local account: WW930\a577522
+. 2014-09-29 11:14:36.401 Working directory: C:\Program Files (x86)\WinSCP
+. 2014-09-29 11:14:36.401 Process ID: 7740
+. 2014-09-29 11:14:36.401 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=555 /consoleinstance=_5388_813 "/console" "/script=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.txt" "/log=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.log" "/parameter" "ftp" "ccovtom" "172.23.115.128" "/DumpBdd/" "C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\" "DumpForFo.sql.gz" 
+. 2014-09-29 11:14:36.401 Time zone: Current: GMT+2, Standard: GMT+1 (Paris, Madrid), DST: GMT+2 (Paris, Madrid (heure d’été)), DST Start: 30/03/2014, DST End: 26/10/2014
+. 2014-09-29 11:14:36.401 Login time: lundi 29 septembre 2014 11:14:36
+. 2014-09-29 11:14:36.401 --------------------------------------------------------------------------
+. 2014-09-29 11:14:36.401 Script: Retrospectively logging previous script records:
+> 2014-09-29 11:14:36.401 Script: option batch abort
+< 2014-09-29 11:14:36.401 Script: batch           abort     
+> 2014-09-29 11:14:36.401 Script: option confirm off
+< 2014-09-29 11:14:36.401 Script: confirm         off       
+> 2014-09-29 11:14:36.401 Script: open ftp://ccovtom:***@172.23.115.128/
+. 2014-09-29 11:14:36.401 --------------------------------------------------------------------------
+. 2014-09-29 11:14:36.401 Session name: ccovtom@172.23.115.128 (Ad-Hoc site)
+. 2014-09-29 11:14:36.401 Host name: 172.23.115.128 (Port: 21)
+. 2014-09-29 11:14:36.401 User name: ccovtom (Password: Yes, Key file: No)
+. 2014-09-29 11:14:36.401 Tunnel: No
+. 2014-09-29 11:14:36.401 Transfer Protocol: FTP
+. 2014-09-29 11:14:36.401 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2014-09-29 11:14:36.401 Proxy: none
+. 2014-09-29 11:14:36.401 Send buffer: 262144
+. 2014-09-29 11:14:36.401 UTF: 2
+. 2014-09-29 11:14:36.401 FTP: FTPS: None; Passive: Yes [Force IP: A]; MLSD: A [List all: A]
+. 2014-09-29 11:14:36.401 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2014-09-29 11:14:36.401 Cache directory changes: Yes, Permanent: Yes
+. 2014-09-29 11:14:36.401 DST mode: 1; Timezone offset: 0h 0m
+. 2014-09-29 11:14:36.401 --------------------------------------------------------------------------
+. 2014-09-29 11:14:36.404 Connexion à 172.23.115.128...
+. 2014-09-29 11:14:36.405 Connecté à 172.23.115.128. En attente du message de bienvenue...
+< 2014-09-29 11:14:36.407 220 Serveur FTP AtosOrigin  Rennes Ready 
+> 2014-09-29 11:14:36.407 USER ccovtom
+< 2014-09-29 11:14:36.409 331 Password required for ccovtom.
+> 2014-09-29 11:14:36.409 PASS *******
+< 2014-09-29 11:14:36.418 230 Use is restricted to AtosOrigin authorized users who must comply with the Electronic Communications Policy. Usage is monitored; unauthorised use will be prosecuted
+> 2014-09-29 11:14:36.418 SYST
+< 2014-09-29 11:14:36.419 215 UNIX Type: L8
+> 2014-09-29 11:14:36.419 FEAT
+< 2014-09-29 11:14:36.420 211-Features:
+< 2014-09-29 11:14:36.420  MDTM
+< 2014-09-29 11:14:36.420  REST STREAM
+< 2014-09-29 11:14:36.420  SIZE
+< 2014-09-29 11:14:36.420 211 End
+. 2014-09-29 11:14:36.420 Connecté
+. 2014-09-29 11:14:36.420 --------------------------------------------------------------------------
+. 2014-09-29 11:14:36.420 Using FTP protocol.
+. 2014-09-29 11:14:36.421 Doing startup conversation with host.
+> 2014-09-29 11:14:36.421 PWD
+< 2014-09-29 11:14:36.422 257 "/" is current directory.
+. 2014-09-29 11:14:36.422 Getting current directory name.
+. 2014-09-29 11:14:36.422 Startup conversation with host finished.
+< 2014-09-29 11:14:36.422 Script: Session active : [1] ccovtom@172.23.115.128
+> 2014-09-29 11:14:36.423 Script: get -preservetime /DumpBdd/DumpForFo.sql.gz C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\\DumpForFo.sql.gz
+. 2014-09-29 11:14:36.423 Listing file "/DumpBdd/DumpForFo.sql.gz".
+. 2014-09-29 11:14:36.423 Listage du répertoire en cours...
+> 2014-09-29 11:14:36.423 CWD /DumpBdd/
+< 2014-09-29 11:14:36.424 250 CWD command successful
+> 2014-09-29 11:14:36.424 PWD
+< 2014-09-29 11:14:36.425 257 "/DumpBdd" is current directory.
+> 2014-09-29 11:14:36.425 TYPE A
+< 2014-09-29 11:14:36.425 200 Type set to A
+> 2014-09-29 11:14:36.426 PASV
+< 2014-09-29 11:14:36.427 227 Entering Passive Mode (172,23,115,128,142,133).
+> 2014-09-29 11:14:36.427 LIST -a
+< 2014-09-29 11:14:36.429 150 Opening ASCII mode data connection for file list
+. 2014-09-29 11:14:36.429 drwxr-xr-x   2 ccovtom  ccovtom      4096 Sep 10 07:41 .
+. 2014-09-29 11:14:36.429 drwx------   8 ccovtom  ccovtom      4096 Sep 23 13:58 ..
+. 2014-09-29 11:14:36.429 -rw-r--r--   1 ccovtom  ccovtom  13030216 Sep 29 09:05 DumpForFo.sql.gz
+< 2014-09-29 11:14:36.430 226 Transfer complete.
+. 2014-09-29 11:14:36.430 Listage du répertoire réussi
+. 2014-09-29 11:14:36.430 DumpForFo.sql.gz;-;13030216;2014-09-29T07:05:00.000Z;"ccovtom" [0];"ccovtom" [0];rw-r--r--;0
+. 2014-09-29 11:14:36.431 File: '/DumpBdd/DumpForFo.sql.gz' [2014-09-29T07:05:00.000Z] [13030216]
+. 2014-09-29 11:14:36.431 Copying "/DumpBdd/DumpForFo.sql.gz" to local directory started.
+. 2014-09-29 11:14:36.431 Binary transfer mode selected.
+. 2014-09-29 11:14:36.431 Début du téléchargement de /DumpBdd/DumpForFo.sql.gz
+> 2014-09-29 11:14:36.432 TYPE I
+< 2014-09-29 11:14:36.433 200 Type set to I
+> 2014-09-29 11:14:36.433 PASV
+< 2014-09-29 11:14:36.434 227 Entering Passive Mode (172,23,115,128,142,134).
+> 2014-09-29 11:14:36.435 RETR DumpForFo.sql.gz
+< 2014-09-29 11:14:36.437 150 Opening BINARY mode data connection for DumpForFo.sql.gz (13030216 bytes)
+< 2014-09-29 11:14:37.549 226 Transfer complete.
+. 2014-09-29 11:14:37.550 Téléchargement réussi
+> 2014-09-29 11:14:37.551 Script: close
+. 2014-09-29 11:14:37.552 Déconnecté du serveur
+. 2014-09-29 11:22:27.651 --------------------------------------------------------------------------
+. 2014-09-29 11:22:27.651 WinSCP Version 5.5.5 (Build 4605) (OS 6.1.7601 Service Pack 1 - Windows 7 Enterprise)
+. 2014-09-29 11:22:27.652 Configuration: C:\Users\A577522\AppData\Roaming\WinSCP.ini
+. 2014-09-29 11:22:27.652 Local account: WW930\a577522
+. 2014-09-29 11:22:27.652 Working directory: C:\Program Files (x86)\WinSCP
+. 2014-09-29 11:22:27.652 Process ID: 7564
+. 2014-09-29 11:22:27.652 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=555 /consoleinstance=_5848_82 "/console" "/script=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.txt" "/log=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.log" "/parameter" "ftp" "ccovtom" "172.23.115.128" "/DumpBdd/" "C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\" "DumpForFo.sql.gz" 
+. 2014-09-29 11:22:27.652 Time zone: Current: GMT+2, Standard: GMT+1 (Paris, Madrid), DST: GMT+2 (Paris, Madrid (heure d’été)), DST Start: 30/03/2014, DST End: 26/10/2014
+. 2014-09-29 11:22:27.652 Login time: lundi 29 septembre 2014 11:22:27
+. 2014-09-29 11:22:27.652 --------------------------------------------------------------------------
+. 2014-09-29 11:22:27.652 Script: Retrospectively logging previous script records:
+> 2014-09-29 11:22:27.652 Script: option batch abort
+< 2014-09-29 11:22:27.652 Script: batch           abort     
+> 2014-09-29 11:22:27.652 Script: option confirm off
+< 2014-09-29 11:22:27.652 Script: confirm         off       
+> 2014-09-29 11:22:27.652 Script: open ftp://ccovtom:***@172.23.115.128/
+. 2014-09-29 11:22:27.652 --------------------------------------------------------------------------
+. 2014-09-29 11:22:27.652 Session name: ccovtom@172.23.115.128 (Ad-Hoc site)
+. 2014-09-29 11:22:27.652 Host name: 172.23.115.128 (Port: 21)
+. 2014-09-29 11:22:27.653 User name: ccovtom (Password: Yes, Key file: No)
+. 2014-09-29 11:22:27.653 Tunnel: No
+. 2014-09-29 11:22:27.653 Transfer Protocol: FTP
+. 2014-09-29 11:22:27.653 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2014-09-29 11:22:27.653 Proxy: none
+. 2014-09-29 11:22:27.653 Send buffer: 262144
+. 2014-09-29 11:22:27.653 UTF: 2
+. 2014-09-29 11:22:27.653 FTP: FTPS: None; Passive: Yes [Force IP: A]; MLSD: A [List all: A]
+. 2014-09-29 11:22:27.653 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2014-09-29 11:22:27.653 Cache directory changes: Yes, Permanent: Yes
+. 2014-09-29 11:22:27.653 DST mode: 1; Timezone offset: 0h 0m
+. 2014-09-29 11:22:27.653 --------------------------------------------------------------------------
+. 2014-09-29 11:22:27.656 Connexion à 172.23.115.128...
+. 2014-09-29 11:22:27.657 Connecté à 172.23.115.128. En attente du message de bienvenue...
+< 2014-09-29 11:22:27.659 220 Serveur FTP AtosOrigin  Rennes Ready 
+> 2014-09-29 11:22:27.659 USER ccovtom
+< 2014-09-29 11:22:27.660 331 Password required for ccovtom.
+> 2014-09-29 11:22:27.660 PASS *******
+< 2014-09-29 11:22:27.669 230 Use is restricted to AtosOrigin authorized users who must comply with the Electronic Communications Policy. Usage is monitored; unauthorised use will be prosecuted
+> 2014-09-29 11:22:27.670 SYST
+< 2014-09-29 11:22:27.671 215 UNIX Type: L8
+> 2014-09-29 11:22:27.671 FEAT
+< 2014-09-29 11:22:27.672 211-Features:
+< 2014-09-29 11:22:27.672  MDTM
+< 2014-09-29 11:22:27.672  REST STREAM
+< 2014-09-29 11:22:27.672  SIZE
+< 2014-09-29 11:22:27.672 211 End
+. 2014-09-29 11:22:27.672 Connecté
+. 2014-09-29 11:22:27.672 --------------------------------------------------------------------------
+. 2014-09-29 11:22:27.672 Using FTP protocol.
+. 2014-09-29 11:22:27.673 Doing startup conversation with host.
+> 2014-09-29 11:22:27.673 PWD
+< 2014-09-29 11:22:27.675 257 "/" is current directory.
+. 2014-09-29 11:22:27.675 Getting current directory name.
+. 2014-09-29 11:22:27.675 Startup conversation with host finished.
+< 2014-09-29 11:22:27.675 Script: Session active : [1] ccovtom@172.23.115.128
+> 2014-09-29 11:22:27.676 Script: get -preservetime /DumpBdd/DumpForFo.sql.gz C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\\DumpForFo.sql.gz
+. 2014-09-29 11:22:27.676 Listing file "/DumpBdd/DumpForFo.sql.gz".
+. 2014-09-29 11:22:27.676 Listage du répertoire en cours...
+> 2014-09-29 11:22:27.676 CWD /DumpBdd/
+< 2014-09-29 11:22:27.677 250 CWD command successful
+> 2014-09-29 11:22:27.677 PWD
+< 2014-09-29 11:22:27.678 257 "/DumpBdd" is current directory.
+> 2014-09-29 11:22:27.678 TYPE A
+< 2014-09-29 11:22:27.679 200 Type set to A
+> 2014-09-29 11:22:27.679 PASV
+< 2014-09-29 11:22:27.681 227 Entering Passive Mode (172,23,115,128,142,143).
+> 2014-09-29 11:22:27.681 LIST -a
+< 2014-09-29 11:22:27.683 150 Opening ASCII mode data connection for file list
+. 2014-09-29 11:22:27.683 drwxr-xr-x   2 ccovtom  ccovtom      4096 Sep 10 07:41 .
+. 2014-09-29 11:22:27.683 drwx------   8 ccovtom  ccovtom      4096 Sep 23 13:58 ..
+. 2014-09-29 11:22:27.684 -rw-r--r--   1 ccovtom  ccovtom   9588122 Sep 29 09:21 DumpForFo.sql.gz
+< 2014-09-29 11:22:27.684 226 Transfer complete.
+. 2014-09-29 11:22:27.684 Listage du répertoire réussi
+. 2014-09-29 11:22:27.685 DumpForFo.sql.gz;-;9588122;2014-09-29T07:21:00.000Z;"ccovtom" [0];"ccovtom" [0];rw-r--r--;0
+. 2014-09-29 11:22:27.685 File: '/DumpBdd/DumpForFo.sql.gz' [2014-09-29T07:21:00.000Z] [9588122]
+. 2014-09-29 11:22:27.685 Copying "/DumpBdd/DumpForFo.sql.gz" to local directory started.
+. 2014-09-29 11:22:27.685 Binary transfer mode selected.
+. 2014-09-29 11:22:27.685 Début du téléchargement de /DumpBdd/DumpForFo.sql.gz
+> 2014-09-29 11:22:27.686 TYPE I
+< 2014-09-29 11:22:27.687 200 Type set to I
+> 2014-09-29 11:22:27.687 PASV
+< 2014-09-29 11:22:27.688 227 Entering Passive Mode (172,23,115,128,142,144).
+> 2014-09-29 11:22:27.689 RETR DumpForFo.sql.gz
+< 2014-09-29 11:22:27.691 150 Opening BINARY mode data connection for DumpForFo.sql.gz (9588122 bytes)
+< 2014-09-29 11:22:28.526 226 Transfer complete.
+. 2014-09-29 11:22:28.527 Téléchargement réussi
+> 2014-09-29 11:22:28.528 Script: close
+. 2014-09-29 11:22:28.530 Déconnecté du serveur
+. 2014-09-29 11:23:53.194 --------------------------------------------------------------------------
+. 2014-09-29 11:23:53.194 WinSCP Version 5.5.5 (Build 4605) (OS 6.1.7601 Service Pack 1 - Windows 7 Enterprise)
+. 2014-09-29 11:23:53.194 Configuration: C:\Users\A577522\AppData\Roaming\WinSCP.ini
+. 2014-09-29 11:23:53.195 Local account: WW930\a577522
+. 2014-09-29 11:23:53.195 Working directory: C:\Program Files (x86)\WinSCP
+. 2014-09-29 11:23:53.195 Process ID: 3104
+. 2014-09-29 11:23:53.195 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=555 /consoleinstance=_7144_299 "/console" "/script=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.txt" "/log=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.log" "/parameter" "ftp" "ccovtom" "172.23.115.128" "/DumpBdd/" "C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\" "DumpForFo.sql.gz" 
+. 2014-09-29 11:23:53.195 Time zone: Current: GMT+2, Standard: GMT+1 (Paris, Madrid), DST: GMT+2 (Paris, Madrid (heure d’été)), DST Start: 30/03/2014, DST End: 26/10/2014
+. 2014-09-29 11:23:53.195 Login time: lundi 29 septembre 2014 11:23:53
+. 2014-09-29 11:23:53.195 --------------------------------------------------------------------------
+. 2014-09-29 11:23:53.195 Script: Retrospectively logging previous script records:
+> 2014-09-29 11:23:53.195 Script: option batch abort
+< 2014-09-29 11:23:53.195 Script: batch           abort     
+> 2014-09-29 11:23:53.195 Script: option confirm off
+< 2014-09-29 11:23:53.195 Script: confirm         off       
+> 2014-09-29 11:23:53.195 Script: open ftp://ccovtom:***@172.23.115.128/
+. 2014-09-29 11:23:53.195 --------------------------------------------------------------------------
+. 2014-09-29 11:23:53.195 Session name: ccovtom@172.23.115.128 (Ad-Hoc site)
+. 2014-09-29 11:23:53.195 Host name: 172.23.115.128 (Port: 21)
+. 2014-09-29 11:23:53.195 User name: ccovtom (Password: Yes, Key file: No)
+. 2014-09-29 11:23:53.195 Tunnel: No
+. 2014-09-29 11:23:53.195 Transfer Protocol: FTP
+. 2014-09-29 11:23:53.195 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2014-09-29 11:23:53.195 Proxy: none
+. 2014-09-29 11:23:53.195 Send buffer: 262144
+. 2014-09-29 11:23:53.196 UTF: 2
+. 2014-09-29 11:23:53.196 FTP: FTPS: None; Passive: Yes [Force IP: A]; MLSD: A [List all: A]
+. 2014-09-29 11:23:53.196 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2014-09-29 11:23:53.196 Cache directory changes: Yes, Permanent: Yes
+. 2014-09-29 11:23:53.196 DST mode: 1; Timezone offset: 0h 0m
+. 2014-09-29 11:23:53.196 --------------------------------------------------------------------------
+. 2014-09-29 11:23:53.199 Connexion à 172.23.115.128...
+. 2014-09-29 11:23:53.200 Connecté à 172.23.115.128. En attente du message de bienvenue...
+< 2014-09-29 11:23:53.202 220 Serveur FTP AtosOrigin  Rennes Ready 
+> 2014-09-29 11:23:53.202 USER ccovtom
+< 2014-09-29 11:23:53.204 331 Password required for ccovtom.
+> 2014-09-29 11:23:53.204 PASS *******
+< 2014-09-29 11:23:53.217 230 Use is restricted to AtosOrigin authorized users who must comply with the Electronic Communications Policy. Usage is monitored; unauthorised use will be prosecuted
+> 2014-09-29 11:23:53.217 SYST
+< 2014-09-29 11:23:53.218 215 UNIX Type: L8
+> 2014-09-29 11:23:53.218 FEAT
+< 2014-09-29 11:23:53.219 211-Features:
+< 2014-09-29 11:23:53.219  MDTM
+< 2014-09-29 11:23:53.219  REST STREAM
+< 2014-09-29 11:23:53.219  SIZE
+< 2014-09-29 11:23:53.219 211 End
+. 2014-09-29 11:23:53.219 Connecté
+. 2014-09-29 11:23:53.219 --------------------------------------------------------------------------
+. 2014-09-29 11:23:53.219 Using FTP protocol.
+. 2014-09-29 11:23:53.220 Doing startup conversation with host.
+> 2014-09-29 11:23:53.220 PWD
+< 2014-09-29 11:23:53.221 257 "/" is current directory.
+. 2014-09-29 11:23:53.221 Getting current directory name.
+. 2014-09-29 11:23:53.221 Startup conversation with host finished.
+< 2014-09-29 11:23:53.222 Script: Session active : [1] ccovtom@172.23.115.128
+> 2014-09-29 11:23:53.222 Script: get -preservetime /DumpBdd/DumpForFo.sql.gz C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\\DumpForFo.sql.gz
+. 2014-09-29 11:23:53.222 Listing file "/DumpBdd/DumpForFo.sql.gz".
+. 2014-09-29 11:23:53.222 Listage du répertoire en cours...
+> 2014-09-29 11:23:53.222 CWD /DumpBdd/
+< 2014-09-29 11:23:53.223 250 CWD command successful
+> 2014-09-29 11:23:53.223 PWD
+< 2014-09-29 11:23:53.224 257 "/DumpBdd" is current directory.
+> 2014-09-29 11:23:53.224 TYPE A
+< 2014-09-29 11:23:53.225 200 Type set to A
+> 2014-09-29 11:23:53.226 PASV
+< 2014-09-29 11:23:53.227 227 Entering Passive Mode (172,23,115,128,142,146).
+> 2014-09-29 11:23:53.227 LIST -a
+< 2014-09-29 11:23:53.229 150 Opening ASCII mode data connection for file list
+. 2014-09-29 11:23:53.230 drwxr-xr-x   2 ccovtom  ccovtom      4096 Sep 10 07:41 .
+. 2014-09-29 11:23:53.230 drwx------   8 ccovtom  ccovtom      4096 Sep 23 13:58 ..
+. 2014-09-29 11:23:53.230 -rw-r--r--   1 ccovtom  ccovtom   9588122 Sep 29 09:21 DumpForFo.sql.gz
+< 2014-09-29 11:23:53.231 226 Transfer complete.
+. 2014-09-29 11:23:53.231 Listage du répertoire réussi
+. 2014-09-29 11:23:53.231 DumpForFo.sql.gz;-;9588122;2014-09-29T07:21:00.000Z;"ccovtom" [0];"ccovtom" [0];rw-r--r--;0
+. 2014-09-29 11:23:53.231 File: '/DumpBdd/DumpForFo.sql.gz' [2014-09-29T07:21:00.000Z] [9588122]
+. 2014-09-29 11:23:53.232 Copying "/DumpBdd/DumpForFo.sql.gz" to local directory started.
+. 2014-09-29 11:23:53.232 Binary transfer mode selected.
+. 2014-09-29 11:23:53.232 Début du téléchargement de /DumpBdd/DumpForFo.sql.gz
+> 2014-09-29 11:23:53.233 TYPE I
+< 2014-09-29 11:23:53.234 200 Type set to I
+> 2014-09-29 11:23:53.234 PASV
+< 2014-09-29 11:23:53.235 227 Entering Passive Mode (172,23,115,128,142,147).
+> 2014-09-29 11:23:53.237 RETR DumpForFo.sql.gz
+< 2014-09-29 11:23:53.239 150 Opening BINARY mode data connection for DumpForFo.sql.gz (9588122 bytes)
+< 2014-09-29 11:23:54.084 226 Transfer complete.
+. 2014-09-29 11:23:54.085 Téléchargement réussi
+> 2014-09-29 11:23:54.086 Script: close
+. 2014-09-29 11:23:54.087 Déconnecté du serveur
+. 2014-09-29 11:24:36.995 --------------------------------------------------------------------------
+. 2014-09-29 11:24:36.995 WinSCP Version 5.5.5 (Build 4605) (OS 6.1.7601 Service Pack 1 - Windows 7 Enterprise)
+. 2014-09-29 11:24:36.996 Configuration: C:\Users\A577522\AppData\Roaming\WinSCP.ini
+. 2014-09-29 11:24:36.997 Local account: WW930\a577522
+. 2014-09-29 11:24:36.997 Working directory: C:\Program Files (x86)\WinSCP
+. 2014-09-29 11:24:36.997 Process ID: 8080
+. 2014-09-29 11:24:36.997 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=555 /consoleinstance=_5820_918 "/console" "/script=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.txt" "/log=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.log" "/parameter" "ftp" "ccovtom" "172.23.115.128" "/DumpBdd/" "C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\" "DumpForFo.sql.gz" 
+. 2014-09-29 11:24:36.997 Time zone: Current: GMT+2, Standard: GMT+1 (Paris, Madrid), DST: GMT+2 (Paris, Madrid (heure d’été)), DST Start: 30/03/2014, DST End: 26/10/2014
+. 2014-09-29 11:24:36.997 Login time: lundi 29 septembre 2014 11:24:36
+. 2014-09-29 11:24:36.997 --------------------------------------------------------------------------
+. 2014-09-29 11:24:36.997 Script: Retrospectively logging previous script records:
+> 2014-09-29 11:24:36.997 Script: option batch abort
+< 2014-09-29 11:24:36.997 Script: batch           abort     
+> 2014-09-29 11:24:36.997 Script: option confirm off
+< 2014-09-29 11:24:36.997 Script: confirm         off       
+> 2014-09-29 11:24:36.997 Script: open ftp://ccovtom:***@172.23.115.128/
+. 2014-09-29 11:24:36.997 --------------------------------------------------------------------------
+. 2014-09-29 11:24:36.997 Session name: ccovtom@172.23.115.128 (Ad-Hoc site)
+. 2014-09-29 11:24:36.997 Host name: 172.23.115.128 (Port: 21)
+. 2014-09-29 11:24:36.997 User name: ccovtom (Password: Yes, Key file: No)
+. 2014-09-29 11:24:36.997 Tunnel: No
+. 2014-09-29 11:24:36.997 Transfer Protocol: FTP
+. 2014-09-29 11:24:36.997 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2014-09-29 11:24:36.997 Proxy: none
+. 2014-09-29 11:24:36.997 Send buffer: 262144
+. 2014-09-29 11:24:36.997 UTF: 2
+. 2014-09-29 11:24:36.997 FTP: FTPS: None; Passive: Yes [Force IP: A]; MLSD: A [List all: A]
+. 2014-09-29 11:24:36.997 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2014-09-29 11:24:36.997 Cache directory changes: Yes, Permanent: Yes
+. 2014-09-29 11:24:36.997 DST mode: 1; Timezone offset: 0h 0m
+. 2014-09-29 11:24:36.997 --------------------------------------------------------------------------
+. 2014-09-29 11:24:37.000 Connexion à 172.23.115.128...
+. 2014-09-29 11:24:37.001 Connecté à 172.23.115.128. En attente du message de bienvenue...
+< 2014-09-29 11:24:37.003 220 Serveur FTP AtosOrigin  Rennes Ready 
+> 2014-09-29 11:24:37.003 USER ccovtom
+< 2014-09-29 11:24:37.005 331 Password required for ccovtom.
+> 2014-09-29 11:24:37.005 PASS *******
+< 2014-09-29 11:24:37.011 230 Use is restricted to AtosOrigin authorized users who must comply with the Electronic Communications Policy. Usage is monitored; unauthorised use will be prosecuted
+> 2014-09-29 11:24:37.011 SYST
+< 2014-09-29 11:24:37.012 215 UNIX Type: L8
+> 2014-09-29 11:24:37.012 FEAT
+< 2014-09-29 11:24:37.013 211-Features:
+< 2014-09-29 11:24:37.013  MDTM
+< 2014-09-29 11:24:37.013  REST STREAM
+< 2014-09-29 11:24:37.013  SIZE
+< 2014-09-29 11:24:37.014 211 End
+. 2014-09-29 11:24:37.014 Connecté
+. 2014-09-29 11:24:37.014 --------------------------------------------------------------------------
+. 2014-09-29 11:24:37.014 Using FTP protocol.
+. 2014-09-29 11:24:37.015 Doing startup conversation with host.
+> 2014-09-29 11:24:37.015 PWD
+< 2014-09-29 11:24:37.016 257 "/" is current directory.
+. 2014-09-29 11:24:37.016 Getting current directory name.
+. 2014-09-29 11:24:37.016 Startup conversation with host finished.
+< 2014-09-29 11:24:37.016 Script: Session active : [1] ccovtom@172.23.115.128
+> 2014-09-29 11:24:37.017 Script: get -preservetime /DumpBdd/DumpForFo.sql.gz C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\\DumpForFo.sql.gz
+. 2014-09-29 11:24:37.017 Listing file "/DumpBdd/DumpForFo.sql.gz".
+. 2014-09-29 11:24:37.017 Listage du répertoire en cours...
+> 2014-09-29 11:24:37.017 CWD /DumpBdd/
+< 2014-09-29 11:24:37.018 250 CWD command successful
+> 2014-09-29 11:24:37.018 PWD
+< 2014-09-29 11:24:37.019 257 "/DumpBdd" is current directory.
+> 2014-09-29 11:24:37.019 TYPE A
+< 2014-09-29 11:24:37.020 200 Type set to A
+> 2014-09-29 11:24:37.020 PASV
+< 2014-09-29 11:24:37.021 227 Entering Passive Mode (172,23,115,128,142,148).
+> 2014-09-29 11:24:37.021 LIST -a
+< 2014-09-29 11:24:37.024 150 Opening ASCII mode data connection for file list
+. 2014-09-29 11:24:37.025 drwxr-xr-x   2 ccovtom  ccovtom      4096 Sep 10 07:41 .
+. 2014-09-29 11:24:37.025 drwx------   8 ccovtom  ccovtom      4096 Sep 23 13:58 ..
+. 2014-09-29 11:24:37.025 -rw-r--r--   1 ccovtom  ccovtom   9588122 Sep 29 09:21 DumpForFo.sql.gz
+< 2014-09-29 11:24:37.026 226 Transfer complete.
+. 2014-09-29 11:24:37.026 Listage du répertoire réussi
+. 2014-09-29 11:24:37.026 DumpForFo.sql.gz;-;9588122;2014-09-29T07:21:00.000Z;"ccovtom" [0];"ccovtom" [0];rw-r--r--;0
+. 2014-09-29 11:24:37.026 File: '/DumpBdd/DumpForFo.sql.gz' [2014-09-29T07:21:00.000Z] [9588122]
+. 2014-09-29 11:24:37.026 Copying "/DumpBdd/DumpForFo.sql.gz" to local directory started.
+. 2014-09-29 11:24:37.026 Binary transfer mode selected.
+. 2014-09-29 11:24:37.026 Début du téléchargement de /DumpBdd/DumpForFo.sql.gz
+> 2014-09-29 11:24:37.027 TYPE I
+< 2014-09-29 11:24:37.028 200 Type set to I
+> 2014-09-29 11:24:37.028 PASV
+< 2014-09-29 11:24:37.029 227 Entering Passive Mode (172,23,115,128,142,149).
+> 2014-09-29 11:24:37.030 RETR DumpForFo.sql.gz
+< 2014-09-29 11:24:37.032 150 Opening BINARY mode data connection for DumpForFo.sql.gz (9588122 bytes)
+< 2014-09-29 11:24:37.852 226 Transfer complete.
+. 2014-09-29 11:24:37.852 Téléchargement réussi
+> 2014-09-29 11:24:37.853 Script: close
+. 2014-09-29 11:24:37.853 Déconnecté du serveur
+. 2014-09-29 11:26:29.470 --------------------------------------------------------------------------
+. 2014-09-29 11:26:29.470 WinSCP Version 5.5.5 (Build 4605) (OS 6.1.7601 Service Pack 1 - Windows 7 Enterprise)
+. 2014-09-29 11:26:29.471 Configuration: C:\Users\A577522\AppData\Roaming\WinSCP.ini
+. 2014-09-29 11:26:29.471 Local account: WW930\a577522
+. 2014-09-29 11:26:29.471 Working directory: C:\Program Files (x86)\WinSCP
+. 2014-09-29 11:26:29.471 Process ID: 8052
+. 2014-09-29 11:26:29.471 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=555 /consoleinstance=_3020_326 "/console" "/script=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.txt" "/log=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.log" "/parameter" "ftp" "ccovtom" "172.23.115.128" "/DumpBdd/" "C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\" "DumpForFo.sql.gz" 
+. 2014-09-29 11:26:29.471 Time zone: Current: GMT+2, Standard: GMT+1 (Paris, Madrid), DST: GMT+2 (Paris, Madrid (heure d’été)), DST Start: 30/03/2014, DST End: 26/10/2014
+. 2014-09-29 11:26:29.472 Login time: lundi 29 septembre 2014 11:26:29
+. 2014-09-29 11:26:29.472 --------------------------------------------------------------------------
+. 2014-09-29 11:26:29.472 Script: Retrospectively logging previous script records:
+> 2014-09-29 11:26:29.472 Script: option batch abort
+< 2014-09-29 11:26:29.472 Script: batch           abort     
+> 2014-09-29 11:26:29.472 Script: option confirm off
+< 2014-09-29 11:26:29.472 Script: confirm         off       
+> 2014-09-29 11:26:29.472 Script: open ftp://ccovtom:***@172.23.115.128/
+. 2014-09-29 11:26:29.472 --------------------------------------------------------------------------
+. 2014-09-29 11:26:29.472 Session name: ccovtom@172.23.115.128 (Ad-Hoc site)
+. 2014-09-29 11:26:29.472 Host name: 172.23.115.128 (Port: 21)
+. 2014-09-29 11:26:29.472 User name: ccovtom (Password: Yes, Key file: No)
+. 2014-09-29 11:26:29.472 Tunnel: No
+. 2014-09-29 11:26:29.472 Transfer Protocol: FTP
+. 2014-09-29 11:26:29.472 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2014-09-29 11:26:29.472 Proxy: none
+. 2014-09-29 11:26:29.472 Send buffer: 262144
+. 2014-09-29 11:26:29.472 UTF: 2
+. 2014-09-29 11:26:29.472 FTP: FTPS: None; Passive: Yes [Force IP: A]; MLSD: A [List all: A]
+. 2014-09-29 11:26:29.472 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2014-09-29 11:26:29.472 Cache directory changes: Yes, Permanent: Yes
+. 2014-09-29 11:26:29.472 DST mode: 1; Timezone offset: 0h 0m
+. 2014-09-29 11:26:29.472 --------------------------------------------------------------------------
+. 2014-09-29 11:26:29.475 Connexion à 172.23.115.128...
+. 2014-09-29 11:26:29.476 Connecté à 172.23.115.128. En attente du message de bienvenue...
+< 2014-09-29 11:26:29.478 220 Serveur FTP AtosOrigin  Rennes Ready 
+> 2014-09-29 11:26:29.478 USER ccovtom
+< 2014-09-29 11:26:29.480 331 Password required for ccovtom.
+> 2014-09-29 11:26:29.481 PASS *******
+< 2014-09-29 11:26:29.491 230 Use is restricted to AtosOrigin authorized users who must comply with the Electronic Communications Policy. Usage is monitored; unauthorised use will be prosecuted
+> 2014-09-29 11:26:29.491 SYST
+< 2014-09-29 11:26:29.492 215 UNIX Type: L8
+> 2014-09-29 11:26:29.492 FEAT
+< 2014-09-29 11:26:29.493 211-Features:
+< 2014-09-29 11:26:29.493  MDTM
+< 2014-09-29 11:26:29.493  REST STREAM
+< 2014-09-29 11:26:29.493  SIZE
+< 2014-09-29 11:26:29.493 211 End
+. 2014-09-29 11:26:29.493 Connecté
+. 2014-09-29 11:26:29.493 --------------------------------------------------------------------------
+. 2014-09-29 11:26:29.493 Using FTP protocol.
+. 2014-09-29 11:26:29.494 Doing startup conversation with host.
+> 2014-09-29 11:26:29.494 PWD
+< 2014-09-29 11:26:29.495 257 "/" is current directory.
+. 2014-09-29 11:26:29.496 Getting current directory name.
+. 2014-09-29 11:26:29.496 Startup conversation with host finished.
+< 2014-09-29 11:26:29.496 Script: Session active : [1] ccovtom@172.23.115.128
+> 2014-09-29 11:26:29.496 Script: get -preservetime /DumpBdd/DumpForFo.sql.gz C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\\DumpForFo.sql.gz
+. 2014-09-29 11:26:29.496 Listing file "/DumpBdd/DumpForFo.sql.gz".
+. 2014-09-29 11:26:29.497 Listage du répertoire en cours...
+> 2014-09-29 11:26:29.497 CWD /DumpBdd/
+< 2014-09-29 11:26:29.498 250 CWD command successful
+> 2014-09-29 11:26:29.498 PWD
+< 2014-09-29 11:26:29.499 257 "/DumpBdd" is current directory.
+> 2014-09-29 11:26:29.499 TYPE A
+< 2014-09-29 11:26:29.500 200 Type set to A
+> 2014-09-29 11:26:29.500 PASV
+< 2014-09-29 11:26:29.501 227 Entering Passive Mode (172,23,115,128,142,151).
+> 2014-09-29 11:26:29.501 LIST -a
+< 2014-09-29 11:26:29.503 150 Opening ASCII mode data connection for file list
+. 2014-09-29 11:26:29.504 drwxr-xr-x   2 ccovtom  ccovtom      4096 Sep 10 07:41 .
+. 2014-09-29 11:26:29.504 drwx------   8 ccovtom  ccovtom      4096 Sep 23 13:58 ..
+. 2014-09-29 11:26:29.504 -rw-r--r--   1 ccovtom  ccovtom   9588122 Sep 29 09:21 DumpForFo.sql.gz
+< 2014-09-29 11:26:29.505 226 Transfer complete.
+. 2014-09-29 11:26:29.505 Listage du répertoire réussi
+. 2014-09-29 11:26:29.505 DumpForFo.sql.gz;-;9588122;2014-09-29T07:21:00.000Z;"ccovtom" [0];"ccovtom" [0];rw-r--r--;0
+. 2014-09-29 11:26:29.506 File: '/DumpBdd/DumpForFo.sql.gz' [2014-09-29T07:21:00.000Z] [9588122]
+. 2014-09-29 11:26:29.506 Copying "/DumpBdd/DumpForFo.sql.gz" to local directory started.
+. 2014-09-29 11:26:29.506 Binary transfer mode selected.
+. 2014-09-29 11:26:29.506 Début du téléchargement de /DumpBdd/DumpForFo.sql.gz
+> 2014-09-29 11:26:29.507 TYPE I
+< 2014-09-29 11:26:29.508 200 Type set to I
+> 2014-09-29 11:26:29.508 PASV
+< 2014-09-29 11:26:29.509 227 Entering Passive Mode (172,23,115,128,142,152).
+> 2014-09-29 11:26:29.510 RETR DumpForFo.sql.gz
+< 2014-09-29 11:26:29.512 150 Opening BINARY mode data connection for DumpForFo.sql.gz (9588122 bytes)
+< 2014-09-29 11:26:30.340 226 Transfer complete.
+. 2014-09-29 11:26:30.340 Téléchargement réussi
+> 2014-09-29 11:26:30.341 Script: close
+. 2014-09-29 11:26:30.343 Déconnecté du serveur
+. 2014-09-29 11:28:22.208 --------------------------------------------------------------------------
+. 2014-09-29 11:28:22.217 WinSCP Version 5.5.5 (Build 4605) (OS 6.1.7601 Service Pack 1 - Windows 7 Enterprise)
+. 2014-09-29 11:28:22.218 Configuration: C:\Users\A577522\AppData\Roaming\WinSCP.ini
+. 2014-09-29 11:28:22.219 Local account: WW930\a577522
+. 2014-09-29 11:28:22.219 Working directory: C:\Program Files (x86)\WinSCP
+. 2014-09-29 11:28:22.219 Process ID: 7376
+. 2014-09-29 11:28:22.219 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=555 /consoleinstance=_7788_847 "/console" "/script=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.txt" "/log=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.log" "/parameter" "ftp" "ccovtom" "172.23.115.128" "/DumpBdd/" "C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\" "DumpForFo.sql.gz" 
+. 2014-09-29 11:28:22.219 Time zone: Current: GMT+2, Standard: GMT+1 (Paris, Madrid), DST: GMT+2 (Paris, Madrid (heure d’été)), DST Start: 30/03/2014, DST End: 26/10/2014
+. 2014-09-29 11:28:22.219 Login time: lundi 29 septembre 2014 11:28:22
+. 2014-09-29 11:28:22.219 --------------------------------------------------------------------------
+. 2014-09-29 11:28:22.219 Script: Retrospectively logging previous script records:
+> 2014-09-29 11:28:22.219 Script: option batch abort
+< 2014-09-29 11:28:22.219 Script: batch           abort     
+> 2014-09-29 11:28:22.219 Script: option confirm off
+< 2014-09-29 11:28:22.219 Script: confirm         off       
+> 2014-09-29 11:28:22.219 Script: open ftp://ccovtom:***@172.23.115.128/
+. 2014-09-29 11:28:22.219 --------------------------------------------------------------------------
+. 2014-09-29 11:28:22.219 Session name: ccovtom@172.23.115.128 (Ad-Hoc site)
+. 2014-09-29 11:28:22.219 Host name: 172.23.115.128 (Port: 21)
+. 2014-09-29 11:28:22.219 User name: ccovtom (Password: Yes, Key file: No)
+. 2014-09-29 11:28:22.219 Tunnel: No
+. 2014-09-29 11:28:22.219 Transfer Protocol: FTP
+. 2014-09-29 11:28:22.219 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2014-09-29 11:28:22.219 Proxy: none
+. 2014-09-29 11:28:22.219 Send buffer: 262144
+. 2014-09-29 11:28:22.219 UTF: 2
+. 2014-09-29 11:28:22.219 FTP: FTPS: None; Passive: Yes [Force IP: A]; MLSD: A [List all: A]
+. 2014-09-29 11:28:22.219 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2014-09-29 11:28:22.219 Cache directory changes: Yes, Permanent: Yes
+. 2014-09-29 11:28:22.219 DST mode: 1; Timezone offset: 0h 0m
+. 2014-09-29 11:28:22.219 --------------------------------------------------------------------------
+. 2014-09-29 11:28:22.223 Connexion à 172.23.115.128...
+. 2014-09-29 11:28:22.224 Connecté à 172.23.115.128. En attente du message de bienvenue...
+< 2014-09-29 11:28:22.226 220 Serveur FTP AtosOrigin  Rennes Ready 
+> 2014-09-29 11:28:22.226 USER ccovtom
+< 2014-09-29 11:28:22.229 331 Password required for ccovtom.
+> 2014-09-29 11:28:22.229 PASS *******
+< 2014-09-29 11:28:22.234 230 Use is restricted to AtosOrigin authorized users who must comply with the Electronic Communications Policy. Usage is monitored; unauthorised use will be prosecuted
+> 2014-09-29 11:28:22.234 SYST
+< 2014-09-29 11:28:22.235 215 UNIX Type: L8
+> 2014-09-29 11:28:22.235 FEAT
+< 2014-09-29 11:28:22.236 211-Features:
+< 2014-09-29 11:28:22.237  MDTM
+< 2014-09-29 11:28:22.237  REST STREAM
+< 2014-09-29 11:28:22.237  SIZE
+< 2014-09-29 11:28:22.237 211 End
+. 2014-09-29 11:28:22.237 Connecté
+. 2014-09-29 11:28:22.237 --------------------------------------------------------------------------
+. 2014-09-29 11:28:22.237 Using FTP protocol.
+. 2014-09-29 11:28:22.238 Doing startup conversation with host.
+> 2014-09-29 11:28:22.238 PWD
+< 2014-09-29 11:28:22.239 257 "/" is current directory.
+. 2014-09-29 11:28:22.239 Getting current directory name.
+. 2014-09-29 11:28:22.239 Startup conversation with host finished.
+< 2014-09-29 11:28:22.239 Script: Session active : [1] ccovtom@172.23.115.128
+> 2014-09-29 11:28:22.240 Script: get -preservetime /DumpBdd/DumpForFo.sql.gz C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\\DumpForFo.sql.gz
+. 2014-09-29 11:28:22.240 Listing file "/DumpBdd/DumpForFo.sql.gz".
+. 2014-09-29 11:28:22.240 Listage du répertoire en cours...
+> 2014-09-29 11:28:22.240 CWD /DumpBdd/
+< 2014-09-29 11:28:22.241 250 CWD command successful
+> 2014-09-29 11:28:22.241 PWD
+< 2014-09-29 11:28:22.242 257 "/DumpBdd" is current directory.
+> 2014-09-29 11:28:22.242 TYPE A
+< 2014-09-29 11:28:22.243 200 Type set to A
+> 2014-09-29 11:28:22.243 PASV
+< 2014-09-29 11:28:22.244 227 Entering Passive Mode (172,23,115,128,142,154).
+> 2014-09-29 11:28:22.244 LIST -a
+< 2014-09-29 11:28:22.246 150 Opening ASCII mode data connection for file list
+. 2014-09-29 11:28:22.247 drwxr-xr-x   2 ccovtom  ccovtom      4096 Sep 10 07:41 .
+. 2014-09-29 11:28:22.247 drwx------   8 ccovtom  ccovtom      4096 Sep 23 13:58 ..
+. 2014-09-29 11:28:22.247 -rw-r--r--   1 ccovtom  ccovtom   9588122 Sep 29 09:21 DumpForFo.sql.gz
+< 2014-09-29 11:28:22.248 226 Transfer complete.
+. 2014-09-29 11:28:22.248 Listage du répertoire réussi
+. 2014-09-29 11:28:22.248 DumpForFo.sql.gz;-;9588122;2014-09-29T07:21:00.000Z;"ccovtom" [0];"ccovtom" [0];rw-r--r--;0
+. 2014-09-29 11:28:22.248 File: '/DumpBdd/DumpForFo.sql.gz' [2014-09-29T07:21:00.000Z] [9588122]
+. 2014-09-29 11:28:22.249 Copying "/DumpBdd/DumpForFo.sql.gz" to local directory started.
+. 2014-09-29 11:28:22.249 Binary transfer mode selected.
+. 2014-09-29 11:28:22.249 Début du téléchargement de /DumpBdd/DumpForFo.sql.gz
+> 2014-09-29 11:28:22.250 TYPE I
+< 2014-09-29 11:28:22.251 200 Type set to I
+> 2014-09-29 11:28:22.251 PASV
+< 2014-09-29 11:28:22.252 227 Entering Passive Mode (172,23,115,128,142,155).
+> 2014-09-29 11:28:22.253 RETR DumpForFo.sql.gz
+< 2014-09-29 11:28:22.256 150 Opening BINARY mode data connection for DumpForFo.sql.gz (9588122 bytes)
+< 2014-09-29 11:28:23.077 226 Transfer complete.
+. 2014-09-29 11:28:23.077 Téléchargement réussi
+> 2014-09-29 11:28:23.078 Script: close
+. 2014-09-29 11:28:23.079 Déconnecté du serveur
+. 2014-09-29 11:32:48.506 --------------------------------------------------------------------------
+. 2014-09-29 11:32:48.507 WinSCP Version 5.5.5 (Build 4605) (OS 6.1.7601 Service Pack 1 - Windows 7 Enterprise)
+. 2014-09-29 11:32:48.507 Configuration: C:\Users\A577522\AppData\Roaming\WinSCP.ini
+. 2014-09-29 11:32:48.508 Local account: WW930\a577522
+. 2014-09-29 11:32:48.508 Working directory: C:\Program Files (x86)\WinSCP
+. 2014-09-29 11:32:48.508 Process ID: 7236
+. 2014-09-29 11:32:48.508 Command-line: "C:\Program Files (x86)\WinSCP\WinSCP.exe" /console=555 /consoleinstance=_8056_170 "/console" "/script=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.txt" "/log=C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\getdump.log" "/parameter" "ftp" "ccovtom" "172.23.115.128" "/DumpBdd/" "C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\" "DumpForFo.sql.gz" 
+. 2014-09-29 11:32:48.508 Time zone: Current: GMT+2, Standard: GMT+1 (Paris, Madrid), DST: GMT+2 (Paris, Madrid (heure d’été)), DST Start: 30/03/2014, DST End: 26/10/2014
+. 2014-09-29 11:32:48.508 Login time: lundi 29 septembre 2014 11:32:48
+. 2014-09-29 11:32:48.508 --------------------------------------------------------------------------
+. 2014-09-29 11:32:48.508 Script: Retrospectively logging previous script records:
+> 2014-09-29 11:32:48.508 Script: option batch abort
+< 2014-09-29 11:32:48.508 Script: batch           abort     
+> 2014-09-29 11:32:48.508 Script: option confirm off
+< 2014-09-29 11:32:48.508 Script: confirm         off       
+> 2014-09-29 11:32:48.508 Script: open ftp://ccovtom:***@172.23.115.128/
+. 2014-09-29 11:32:48.508 --------------------------------------------------------------------------
+. 2014-09-29 11:32:48.508 Session name: ccovtom@172.23.115.128 (Ad-Hoc site)
+. 2014-09-29 11:32:48.508 Host name: 172.23.115.128 (Port: 21)
+. 2014-09-29 11:32:48.508 User name: ccovtom (Password: Yes, Key file: No)
+. 2014-09-29 11:32:48.508 Tunnel: No
+. 2014-09-29 11:32:48.508 Transfer Protocol: FTP
+. 2014-09-29 11:32:48.508 Ping type: C, Ping interval: 30 sec; Timeout: 15 sec
+. 2014-09-29 11:32:48.508 Proxy: none
+. 2014-09-29 11:32:48.508 Send buffer: 262144
+. 2014-09-29 11:32:48.508 UTF: 2
+. 2014-09-29 11:32:48.508 FTP: FTPS: None; Passive: Yes [Force IP: A]; MLSD: A [List all: A]
+. 2014-09-29 11:32:48.508 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2014-09-29 11:32:48.508 Cache directory changes: Yes, Permanent: Yes
+. 2014-09-29 11:32:48.508 DST mode: 1; Timezone offset: 0h 0m
+. 2014-09-29 11:32:48.508 --------------------------------------------------------------------------
+. 2014-09-29 11:32:48.511 Connexion à 172.23.115.128...
+. 2014-09-29 11:32:48.512 Connecté à 172.23.115.128. En attente du message de bienvenue...
+< 2014-09-29 11:32:48.514 220 Serveur FTP AtosOrigin  Rennes Ready 
+> 2014-09-29 11:32:48.514 USER ccovtom
+< 2014-09-29 11:32:48.516 331 Password required for ccovtom.
+> 2014-09-29 11:32:48.516 PASS *******
+< 2014-09-29 11:32:48.530 230 Use is restricted to AtosOrigin authorized users who must comply with the Electronic Communications Policy. Usage is monitored; unauthorised use will be prosecuted
+> 2014-09-29 11:32:48.530 SYST
+< 2014-09-29 11:32:48.531 215 UNIX Type: L8
+> 2014-09-29 11:32:48.531 FEAT
+< 2014-09-29 11:32:48.532 211-Features:
+< 2014-09-29 11:32:48.532  MDTM
+< 2014-09-29 11:32:48.532  REST STREAM
+< 2014-09-29 11:32:48.532  SIZE
+< 2014-09-29 11:32:48.532 211 End
+. 2014-09-29 11:32:48.532 Connecté
+. 2014-09-29 11:32:48.532 --------------------------------------------------------------------------
+. 2014-09-29 11:32:48.533 Using FTP protocol.
+. 2014-09-29 11:32:48.533 Doing startup conversation with host.
+> 2014-09-29 11:32:48.534 PWD
+< 2014-09-29 11:32:48.535 257 "/" is current directory.
+. 2014-09-29 11:32:48.535 Getting current directory name.
+. 2014-09-29 11:32:48.535 Startup conversation with host finished.
+< 2014-09-29 11:32:48.535 Script: Session active : [1] ccovtom@172.23.115.128
+> 2014-09-29 11:32:48.536 Script: get -preservetime /DumpBdd/DumpForFo.sql.gz C:\Users\A577522\Desktop\CCO_dev\Powershell\SFTP\resource\\DumpForFo.sql.gz
+. 2014-09-29 11:32:48.536 Listing file "/DumpBdd/DumpForFo.sql.gz".
+. 2014-09-29 11:32:48.536 Listage du répertoire en cours...
+> 2014-09-29 11:32:48.536 CWD /DumpBdd/
+< 2014-09-29 11:32:48.537 250 CWD command successful
+> 2014-09-29 11:32:48.537 PWD
+< 2014-09-29 11:32:48.538 257 "/DumpBdd" is current directory.
+> 2014-09-29 11:32:48.538 TYPE A
+< 2014-09-29 11:32:48.539 200 Type set to A
+> 2014-09-29 11:32:48.540 PASV
+< 2014-09-29 11:32:48.541 227 Entering Passive Mode (172,23,115,128,142,158).
+> 2014-09-29 11:32:48.541 LIST -a
+< 2014-09-29 11:32:48.543 150 Opening ASCII mode data connection for file list
+. 2014-09-29 11:32:48.544 drwxr-xr-x   2 ccovtom  ccovtom      4096 Sep 10 07:41 .
+. 2014-09-29 11:32:48.544 drwx------   8 ccovtom  ccovtom      4096 Sep 23 13:58 ..
+. 2014-09-29 11:32:48.544 -rw-r--r--   1 ccovtom  ccovtom   9588122 Sep 29 09:21 DumpForFo.sql.gz
+< 2014-09-29 11:32:48.545 226 Transfer complete.
+. 2014-09-29 11:32:48.545 Listage du répertoire réussi
+. 2014-09-29 11:32:48.545 DumpForFo.sql.gz;-;9588122;2014-09-29T07:21:00.000Z;"ccovtom" [0];"ccovtom" [0];rw-r--r--;0
+. 2014-09-29 11:32:48.545 File: '/DumpBdd/DumpForFo.sql.gz' [2014-09-29T07:21:00.000Z] [9588122]
+. 2014-09-29 11:32:48.545 Copying "/DumpBdd/DumpForFo.sql.gz" to local directory started.
+. 2014-09-29 11:32:48.545 Binary transfer mode selected.
+. 2014-09-29 11:32:48.546 Début du téléchargement de /DumpBdd/DumpForFo.sql.gz
+> 2014-09-29 11:32:48.546 TYPE I
+< 2014-09-29 11:32:48.547 200 Type set to I
+> 2014-09-29 11:32:48.548 PASV
+< 2014-09-29 11:32:48.549 227 Entering Passive Mode (172,23,115,128,142,159).
+> 2014-09-29 11:32:48.550 RETR DumpForFo.sql.gz
+< 2014-09-29 11:32:48.552 150 Opening BINARY mode data connection for DumpForFo.sql.gz (9588122 bytes)
+< 2014-09-29 11:32:49.376 226 Transfer complete.
+. 2014-09-29 11:32:49.376 Téléchargement réussi
+> 2014-09-29 11:32:49.377 Script: close
+. 2014-09-29 11:32:49.377 Déconnecté du serveur
